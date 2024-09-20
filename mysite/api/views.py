@@ -5,4 +5,4 @@ from .serializers import BlogPostSerializer
 
 class BlogPostListCreate(generics.ListCreateAPIView):
     queryset = BlogPost.objects.all()
-    serializer = BlogPostSerializer
+    serializer_class = BlogPostSerializer
